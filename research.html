@@ -3,67 +3,60 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Rishi Malyala - Professional Experience</title>
+    <title>Rishi Malyala - Research</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Rishi Malyala Career" name="description">
+    <meta content="Rishi Malyala Research Page" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Fonts -->
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- CSS & Bootstrap -->
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        .linkedin-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .linkedin-badge img {
-            width: 40px;
-            transition: transform 0.2s;
-        }
-        .linkedin-badge img:hover {
-            transform: scale(1.1);
-        }
-        .award-logo {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-            margin-right: 10px;
-        }
-        .award-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
 
 <body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0 position-relative">
-        <div class="linkedin-badge">
-            <a href="https://www.linkedin.com/in/rishi-malyala-819128154/" target="_blank">
-                <img src="Images/linkedin_logo.png" alt="LinkedIn">
-            </a>
-        </div>
-        <div class="row gx-0">
+    <div class="container-fluid bg-dark px-0">
+        <div class="row gx-0 wow fadeIn" data-wow-delay="0.1s">
             <div class="col-lg-3 bg-primary d-none d-lg-block">
                 <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-white text-uppercase">RISHI</h1>
+                    <h1 class="m-0 display-4 text-white text-uppercase">Rishi</h1>
                 </a>
             </div>
             <div class="col-lg-9">
                 <div class="row gx-0 d-none d-lg-flex bg-dark">
-                    <div class="col-12 px-5 text-end">
-                        <div class="h-100 d-inline-flex align-items-center py-2">
+                    <div class="col-6 px-5 text-start">
+                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                             <i class="fa fa-envelope text-primary me-2"></i>
-                            <p class="mb-0 text-white">rishi_malyala@outlook.com</p>
+                            <p class="mb-0">rishi_malyala@outlook.com</p>
+                        </div>
+                    </div>
+                    <div class="col-6 px-5 text-end">
+                        <div class="h-100 d-inline-flex align-items-center py-2">
+                            <i class="fa fa-phone-alt text-primary me-2"></i>
+                            <p class="mb-0">NOT SO SOON</p>
                         </div>
                     </div>
                 </div>
@@ -81,12 +74,23 @@
                             <div class="nav-item dropdown">
                                 <a href="professional.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Professional</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="career.html" class="dropdown-item active">Career</a>
-                                    <a href="research.html" class="dropdown-item">Research</a>
+                                    <a href="career.html" class="dropdown-item">Career</a>
+                                    <a href="research.html" class="dropdown-item active">Research</a>
                                     <a href="publications.html" class="dropdown-item">Publications</a>
                                 </div>
                             </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="d-none d-lg-flex align-items-center py-2">
+                            <a class="btn btn-outline-secondary btn-square rounded-circle ms-2" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-outline-secondary btn-square rounded-circle ms-2" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-outline-secondary btn-square rounded-circle ms-2" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -95,176 +99,42 @@
     </div>
     <!-- Header End -->
 
-    <!-- Hero Section Start -->
-    <div class="container-fluid p-5 bg-dark text-secondary text-center">
-        <h1 class="display-4 text-white mb-3">My Professional Journey</h1>
-        <p class="lead text-white mb-4">Electrical Engineer | PhD Candidate | AI & Energy Systems Researcher</p>
-        <img src="Images/8d703581-79b0-45fc-ab1b-6a620bdc1ade copy 2.jpg" class="rounded-circle" alt="Rishi Malyala" style="width: 180px; height: 180px; object-fit: cover;">
+    <!-- Research Section Start -->
+    <div class="container-fluid p-5 mb-5 bg-dark text-secondary">
+        <div class="text-center wow fadeIn" data-wow-delay="0.2s">
+            <h1 class="display-3 text-white mb-3">Research</h1>
+            <p class="lead text-white-50">Currently in development... because, well, I have a life 😄</p>
+        </div>
     </div>
-    <!-- Hero Section End -->
+    <!-- Research Section End -->
 
-    <!-- Experience Section Start -->
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="section-title">Experience</h1>
-
-        </div>
-        
-        <!-- Mott MacDonald -->
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-                <img class="img-fluid rounded" src="Images/mottmaclogo.png" alt="Mott MacDonald">
+    <!-- Instagram Start -->
+    <div class="container-fluid position-relative instagram p-0 mt-5">
+        <a href="#" class="d-flex align-items-center justify-content-center position-absolute top-50 start-50 translate-middle bg-white rounded-circle" style="width: 100px; height: 100px; z-index: 1;">
+            <i class="fab fa-instagram fa-2x text-secondary"></i>
+        </a>
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                <img class="img-fluid" src="Insta/DSCF0792.jpg" alt="">
             </div>
-            <div class="col-lg-7">
-                <h3>Mott MacDonald Australia</h3>
-                <p><strong>Electrical Engineer</strong> (Jan 2025 - Present)</p>
-                <p><strong>Graduate Electrical Engineer</strong> (Feb 2023 - Jan 2025)</p>
-                <p>- Assisted in the design and review of earthing and bonding (E&B) systems.<br>
-                   - Contributed to fault current and earth potential rise (EPR) studies using CDEGS software.<br>
-                   - Supported substation and renewable projects (BESS, solar, hydro), ensuring compliance with AS2067 & IEEE 80.<br>
-                   - Collaborated closely with multidisciplinary teams on project deliverables.</p>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.2s">
+                <img class="img-fluid" src="Insta/DSCF1754.jpg" alt="">
             </div>
-        </div>
-
-        <!-- UNSW -->
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0">
-                <img class="img-fluid rounded" src="Images/new-UNSW-logo-png-vertical-crest.png" alt="UNSW Logo">
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                <img class="img-fluid" src="Insta/DSCF1850-Enhanced-NR.jpg" alt="">
             </div>
-            <div class="col-lg-7 order-lg-1">
-                <h3>University of New South Wales (UNSW)</h3>
-                <p><strong>PhD Candidate, Electrical Engineering</strong> (2024 - Present)</p>
-                <p>- Researching energy risk management and predictive analysis, focusing on improving grid resilience and forecasting using machine learning.<br>
-                   - Developing and fine-tuning hybrid deep learning models (GPI-DSSM) applied to energy systems.<br>
-                   - Conducting HPC-based modeling on the NCI Gadi supercomputer, exploring energy demand/supply forecasting at scale.<br>
-                   - Participating in research collaborations and assisting with academic activities.</p>
-                <p><strong>Casual Academic</strong> (May 2024 - Present)</p>
-                <p>- Tutoring and supporting students in the ELEC9716 Electrical Safety course, providing guidance on concepts like earthing, bonding, step & touch potentials.<br>
-                   - ELEC4612 Power System Analysis (Undergraduate and postgraduate disciplinary knowledge course) Demonstrator.<br>
-                   -AGSE Short course: Grid Integration of Renewables using PSCAD Demonstrator.</p>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                <img class="img-fluid" src="Insta/IMG_5677.jpg" alt="">
             </div>
-        </div>
-
-        <!-- Huawei -->
-        <div class="row align-items-center mb-5">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-                <img class="img-fluid rounded" src="Images/Huawei_logo.png" alt="Huawei">
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                <img class="img-fluid" src="Insta/DSCF1047.jpg" alt="">
             </div>
-            <div class="col-lg-7">
-                <h3>Huawei Australia</h3>
-                <p><strong>Intern – Digital Energy (Solar)</strong> (May 2022 - Jul 2022)</p>
-                <p><strong>Service Engineer (Part-time)</strong> (Jul 2022 - Jan 2023)</p>
-                <p>- Supported solar project implementation and maintenance, providing technical advice to clients.<br>
-                   - Assisted with site inspections, troubleshooting, and resolving technical queries.<br>
-                   - Gained exposure to PV inverter operations and solar design standards.</p>
-            </div>
-        </div>
-    <!-- Experience Section End -->
-
-    <!-- Work Rights Section -->
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="section-title">Work Rights</h1>
-        </div>
-        <div class="row text-center">
-            <div class="col-lg-4 mb-4">
-                <img src="Images/aus_logo.png" alt="Australia" style="width: 60px; margin-bottom: 10px;">
-                <h5>Australia</h5>
-                <p>Full Work Rights (Permanent Resident)</p>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <img src="Images/indian-flag-icon-21365.png" alt="India" style="width: 60px; margin-bottom: 10px;">
-                <h5>India</h5>
-                <p>Full Work Rights (Indian Citizen)</p>
+            <div class="col-lg-2 col-md-3 col-sm-4 wow fadeIn" data-wow-delay="0.6s">
+                <img class="img-fluid" src="Insta/DSCF0762.jpg" alt="">
             </div>
         </div>
     </div>
-
-    
-    <!-- Certifications & Awards -->
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="section-title">Certifications & Awards</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100 award-item">
-                    <a href="Images/example1.jpg" target="_blank">
-                        <img src="Images/conferencepaper_logo.png" alt="Award Logo" class="award-logo">
-                    </a>
-                    <div>
-                        <h5>Best Conference Paper Award</h5>
-                        <p>ICSCGE 2024 - Hybrid GPI-DSSM Forecasting Model.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100 award-item">
-                    <a href="Images/example2.jpg" target="_blank">
-                        <img src="Images/scholarship_logo.png" alt="Award Logo" class="award-logo">
-                    </a>
-                    <div>
-                        <h5>University Postgraduate Award (UPA)</h5>
-                        <p>Full stipend & tuition offset at UNSW Sydney.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100 award-item">
-                    <a href="Images/example3.jpg" target="_blank">
-                        <img src="Images/wwcc_logo.png" alt="Award Logo" class="award-logo">
-                    </a>
-                    <div>
-                        <h5>Working with Children Check (Volunteer)</h5>
-                        <p>Issued Jan 2025, Service NSW.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100 award-item">
-                    <a href="Images/example4.jpg" target="_blank">
-                        <img src="Images/nswgovt_logo.png" alt="Award Logo" class="award-logo">
-                    </a>
-                    <div>
-                        <h5>White Card</h5>
-                        <p>Issued Mar 2023, Service NSW.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Additions to Certifications & Licenses -->
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h1 class="section-title">Licenses</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100 award-item">
-                    <a href="Images/example1.jpg" target="_blank">
-                        <img src="Images/car_logo.png" alt="Award Logo" class="award-logo">
-                    </a>
-                    <div>
-                        <h5>Unrestricted Driver's License</h5>
-                        <p>NSW & Indian - Full Manual/Automatic License Holder.<br>
-                        Indian - Full Rider's License</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="bg-light rounded p-4 h-100 award-item">
-                    <a href="Images/example4.jpg" target="_blank">
-                        <img src="Images/flight_logo.png" alt="Award Logo" class="award-logo">
-                    </a>
-                    <div>
-                        <h5>Recreational Pilot License</h5>
-                        <p>Ongoing Training.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Instagram End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary px-5">
@@ -286,14 +156,10 @@
                             <p class="mb-0">TBA</p>
                         </div>
                         <div class="d-flex mt-4">
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-primary btn-square rounded-circle" href="#"><i
-                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -306,38 +172,14 @@
                             <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
                         </div>
                     </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
-        <div class="row gx-5">
-            <div class="col-lg-8">
-                <div class="py-lg-4 text-center">
-                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">rishimalyala.com</a>. All
-                        Rights Reserved. Distributed by <a class="text-light fw-bold"
-                        href="https://rishimalyala.com">Rishi Malyala</a></p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="py-lg-4 text-center credit">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://rishimalyala.com". ***/-->
-                    <p class="text-light mb-0">HTML-CSS designed, coded and maintained by <a class="text-light fw-bold"
-                            href="https://rishimalyala.com">Rishi Malyala</a></p>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -353,4 +195,3 @@
 </body>
 
 </html>
-
