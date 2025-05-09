@@ -16,12 +16,42 @@
     <!-- CSS & Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .linkedin-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .linkedin-badge img {
+            width: 40px;
+            transition: transform 0.2s;
+        }
+        .linkedin-badge img:hover {
+            transform: scale(1.1);
+        }
+        .award-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        .award-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Header Start -->
-    <div class="container-fluid bg-dark px-0">
+    <div class="container-fluid bg-dark px-0 position-relative">
+        <div class="linkedin-badge">
+            <a href="https://www.linkedin.com/in/rishi-malyala-819128154/" target="_blank">
+                <img src="Images/linkedin-logo.png" alt="LinkedIn">
+            </a>
+        </div>
         <div class="row gx-0">
             <div class="col-lg-3 bg-primary d-none d-lg-block">
                 <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
@@ -67,51 +97,119 @@
 
     <!-- Hero Section Start -->
     <div class="container-fluid p-5 bg-dark text-secondary text-center">
-        <h1 class="display-4 text-white mb-4">Career Journey</h1>
-        <img src="Images/8d703581-79b0-45fc-ab1b-6a620bdc1ade copy 2.jpg" class="rounded-circle" alt="Rishi Malyala" style="width: 200px; height: 200px; object-fit: cover;">
+        <h1 class="display-4 text-white mb-3">My Professional Journey</h1>
+        <p class="lead text-white mb-4">Electrical Engineer | PhD Candidate | AI & Energy Systems Enthusiast</p>
+        <img src="Images/8d703581-79b0-45fc-ab1b-6a620bdc1ade copy 2.jpg" class="rounded-circle" alt="Rishi Malyala" style="width: 180px; height: 180px; object-fit: cover;">
     </div>
     <!-- Hero Section End -->
 
-    <!-- Professional Experience Start -->
+    <!-- Experience Section Start -->
     <div class="container py-5">
         <div class="text-center mb-5">
-            <h5 class="section-title">My Work</h5>
+            <h5 class="section-title">Experience</h5>
             <h1 class="display-5">Professional Experience</h1>
         </div>
+        
+        <!-- Mott MacDonald -->
         <div class="row align-items-center mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <img class="img-fluid rounded" src="Images/mottmaclogo.png" alt="Mott MacDonald Office">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <img class="img-fluid rounded" src="Images/mottmaclogo.png" alt="Mott MacDonald">
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <h3>Mott MacDonald Australia</h3>
-                <p>I work as an Electrical Engineer at Mott MacDonald Australia, contributing to major infrastructure projects across the energy sector. My focus areas include:</p>
-                <ul>
-                    <li>Designing and reviewing earthing and bonding (E&B) systems.</li>
-                    <li>Leading fault current and EPR studies using advanced tools.</li>
-                    <li>Delivering key components of renewable energy projects (BESS, pumped hydro, solar farms).</li>
-                    <li>Collaborating with multidisciplinary teams for integrated solutions.</li>
-                    <li>Ensuring compliance with AS2067, IEEE 80, and other relevant standards.</li>
-                </ul>
+                <p><strong>Electrical Engineer</strong> (Jan 2025 - Present)</p>
+                <p><strong>Graduate Electrical Engineer</strong> (Feb 2023 - Jan 2025)</p>
+                <p>- Developed earthing reports, SLDs, earthing plan/cross-sections.<br>
+                   - Led earthing & bonding design and fault/EPR studies.<br>
+                   - Worked on renewable energy projects: BESS, solar, hydro.</p>
             </div>
         </div>
 
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+        <!-- UNSW -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-5 order-lg-2 mb-4 mb-lg-0">
                 <img class="img-fluid rounded" src="Images/new-UNSW-logo-png-vertical-crest.png" alt="UNSW Logo">
             </div>
-            <div class="col-lg-6 order-lg-1">
+            <div class="col-lg-7 order-lg-1">
                 <h3>University of New South Wales (UNSW)</h3>
-                <p>I am currently pursuing a PhD in Electrical Engineering at UNSW Sydney. My research focuses on:</p>
-                <ul>
-                    <li>Energy Risk Management using Predictive Analysis.</li>
-                    <li>Development of hybrid deep learning models (GPI-DSSM) for energy forecasting.</li>
-                    <li>Improving grid resilience through AI-driven insights.</li>
-                    <li>Collaborating with leading researchers and publishing in international conferences.</li>
-                </ul>
+                <p><strong>PhD Candidate, Electrical Engineering</strong> (2024 - 2027)</p>
+                <p>- Research: Energy Risk Management with Predictive Analysis.<br>
+                   - Developing hybrid deep learning (GPI-DSSM) models.<br>
+                   - Focus on AI & grid resilience.</p>
+                <p><strong>Casual Academic</strong> (May 2024 - Present)</p>
+                <p>- Academic Tutor for ELEC9716 (Electrical Safety).</p>
+            </div>
+        </div>
+
+        <!-- Huawei -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <img class="img-fluid rounded" src="Images/huawei-logo.png" alt="Huawei">
+            </div>
+            <div class="col-lg-7">
+                <h3>Huawei Australia</h3>
+                <p><strong>Intern</strong> (May 2022 - Jul 2022)</p>
+                <p><strong>Service Engineer (Part-time)</strong> (Jul 2022 - Jan 2023)</p>
+                <p>- Supported Digital Energy Department (Solar).<br>
+                   - Delivered technical advice & support; praised by customers & managers.</p>
             </div>
         </div>
     </div>
-    <!-- Professional Experience End -->
+    <!-- Experience Section End -->
+
+    <!-- Certifications & Awards -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h5 class="section-title">Highlights</h5>
+            <h1 class="display-5">Certifications & Awards</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="bg-light rounded p-4 h-100 award-item">
+                    <a href="Images/example1.jpg" target="_blank">
+                        <img src="Images/cert-logo1.png" alt="Award Logo" class="award-logo">
+                    </a>
+                    <div>
+                        <h5>Best Conference Paper Award</h5>
+                        <p>ICSCGE 2024 - Hybrid GPI-DSSM Forecasting Model.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="bg-light rounded p-4 h-100 award-item">
+                    <a href="Images/example2.jpg" target="_blank">
+                        <img src="Images/cert-logo2.png" alt="Award Logo" class="award-logo">
+                    </a>
+                    <div>
+                        <h5>University Postgraduate Award (UPA)</h5>
+                        <p>Full stipend & tuition offset at UNSW Sydney.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="bg-light rounded p-4 h-100 award-item">
+                    <a href="Images/example3.jpg" target="_blank">
+                        <img src="Images/cert-logo3.png" alt="Award Logo" class="award-logo">
+                    </a>
+                    <div>
+                        <h5>Working with Children Check (Volunteer)</h5>
+                        <p>Issued Jan 2025, Service NSW.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="bg-light rounded p-4 h-100 award-item">
+                    <a href="Images/example4.jpg" target="_blank">
+                        <img src="Images/cert-logo4.png" alt="Award Logo" class="award-logo">
+                    </a>
+                    <div>
+                        <h5>White Card</h5>
+                        <p>Issued Mar 2023, Service NSW.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
